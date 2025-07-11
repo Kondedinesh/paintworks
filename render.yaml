@@ -1,7 +1,7 @@
 services:
   - type: web
     name: paintworks-backend
-    env: java
+     runtime: java
     buildCommand: "./mvnw clean package"
     startCommand: "java -jar target/paintworks-1.0.0.jar"
     branch: master
