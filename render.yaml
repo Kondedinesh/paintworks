@@ -1,7 +1,7 @@
 services:
   - type: web
     name: paintworks-backend
-    buildCommand: "./mvnw clean package"
+    buildCommand: "./mvn clean package"
     startCommand: "java -jar target/paintworks-1.0.0.jar"
     branch: master
     plan: free
