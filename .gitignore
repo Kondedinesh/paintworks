@@ -1,0 +1,46 @@
+# === Java / Maven / Spring Boot ===
+target/
+*.log
+*.class
+
+# Local Maven repository (should not be committed)
+.m2/
+**/.m2/
+**/repository/
+
+# === IDEs ===
+*.iml
+.idea/
+.vscode/
+
+# === System Files ===
+.DS_Store
+Thumbs.db
+
+# === Node / React ===
+node_modules/
+build/
+.env
+.env.local
+.env.development
+.env.production
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# === OS-specific ===
+*.swp
+*.swo
+
+# === IntelliJ additional ===
+*.ipr
+*.iws
+out/
+
+# === Logs and temp files ===
+*.tmp
+*.bak
+*.swp
+*.swo
+*.orig
+*.rej
