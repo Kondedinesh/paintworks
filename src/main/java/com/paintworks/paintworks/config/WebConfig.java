@@ -17,6 +17,6 @@ public class WebConfig implements WebMvcConfigurer {
                 .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                 .allowedHeaders("*")
                 .exposedHeaders("Authorization") // ✅ Make sure Authorization header is visible to frontend
-                .allowCredentials(false); // ❌ Set to FALSE if you're not using cookies
+                .allowCredentials(true); // ❌ Set to FALSE if you're not using cookies
     }
 }
