@@ -43,6 +43,7 @@ public class SecurityConfig {
             .csrf(AbstractHttpConfigurer::disable)
             .authorizeHttpRequests(auth -> auth
                 .requestMatchers(
+                    "/", // <-- Add this line to allow access to root
                     "/api/auth/**",
                     "/api/auth/login**",
                     "/api/auth/register**",
