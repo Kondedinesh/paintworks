@@ -13,7 +13,8 @@ public class WebConfig implements WebMvcConfigurer {
                 .allowedOrigins(
                     "http://localhost:3000", 
                     "https://pworkersbookinapp.netlify.app", 
-                    "https://afraid-seas-mate.loca.lt") // LocalTunnel URL
+                    "https://afraid-seas-mate.loca.lt",
+                    "https://paintworks.onrender.com" ) // LocalTunnel URL
                 .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                 .allowedHeaders("*") // Allow all headers
                 .allowCredentials(true); // Allow credentials (cookies)
