@@ -12,11 +12,11 @@ public class WebConfig implements WebMvcConfigurer {
         registry.addMapping("/**")
                 .allowedOrigins(
                     "http://localhost:3000", 
-                    "https://pworkersbookinapp.netlify.app", 
-                    "https://afraid-seas-mate.loca.lt",
-                    "https://paintworks.onrender.com" ) // LocalTunnel URL
+                    "https://pworkersbookinapp.netlify.app"
+                )
                 .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
-                .allowedHeaders("*") // Allow all headers
-                .allowCredentials(true); // Allow credentials (cookies)
+                .allowedHeaders("*")
+                .exposedHeaders("Authorization") // ✅ Make sure Authorization header is visible to frontend
+                .allowCredentials(false); // ❌ Set to FALSE if you're not using cookies
     }
 }
